@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: white;
+  --black: black;
+  --dark-gray:#878787;
+ --mostly-black:#282828;
+ --Very-dark-gray:#4d4d4d;
+ --Gray:#ABABAB;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+header{
+    padding: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+section .container {
+  display: flex;
+  justify-content: space-between;
+  
+}
+section .container .login {
+  padding: 20px;
+  border: 0.5px solid var(--dark-gray);
+  border-radius: 10px;
+  height: 550px;
+  width: 40%;
+}
+section .container .image{
+    width: 50%;
+}
+.container .login .welcome{
+    font-family: sans-serif;
+    font-size:25px;
+    line-height:37.5px;
+}
+.login h2{
+    padding-top: 10px;
+    font-family: sans-serif;
+    font-size: 31px;
+}
+.login p{
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+section .container .login form label {
+    font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+section .container .login form label ::placeholder{
+color: var(--Gray);
+}
+section .container .login form input{
+    font-family: sans-serif;
+border: 0.6px solid var(--mostly-black) ;
+border-radius: 6px;
+padding: 15px;
+width: 100%;
+}
+section .container .login form .remember{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+section .container .login form .remember .forget{
+color: var(--Very-dark-gray);
+}
+section .container .login form .remember .check-box{
+    width: 20px;
+    
+}
+section .container .login form .submit{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: var(--black);
+    color: var(--white);
+}
+section .container .login form .register{
+    padding-top: 20px;
+    
+}
+section .container .login form .register p span {
+    color: gray;
+}
+section .container .login form .register .link{
+    font-family:  sans-serif;
+    font-weight: 600;
+    color: var(--black);
+    text-decoration: none;
+}
